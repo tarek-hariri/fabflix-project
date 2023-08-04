@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Confirmed</title>
+    <style>
+        div {
+            width: 200px;
+            overflow: hidden;
+            clear: both;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        input.right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="Checkout" onclick="location.href='shopping-cart.html'" class="right" id = "checkout_button" action = "#">
+
+
+<h1>Payment Confirmed!</h1>
+
+<table id=confirmation_table class="table table-striped">
+    <!-- Create a table header -->
+    <thead>
+    <tr>
+        <!-- Titles of each column-->
+        <th>Sale ID</th>
+        <th>Title</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody id=confirmation_table_body></tbody>
+</table>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="confirmation.js" action = "#"></script>
+
+</body>
+</html>
